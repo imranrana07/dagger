@@ -1,0 +1,2 @@
+com/example/daggertest/BuildConfig.java
+ com.example.daggertest.BuildConfig
