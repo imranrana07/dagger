@@ -74,4 +74,7 @@ dependencies {
     implementation 'com.google.dagger:dagger-android-support:2.25.4' // if you use the support libraries
     kapt 'com.google.dagger:dagger-android-processor:2.25.4'
     kapt 'com.google.dagger:dagger-compiler:2.25.4'
+
+    //data binding
+    implementation "com.airbnb.android:epoxy-databinding:3.11.0"
 }

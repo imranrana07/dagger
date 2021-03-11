@@ -12,13 +12,15 @@ import okhttp3.logging.HttpLoggingInterceptor
 import org.json.JSONObject
 import java.io.IOException
 
+const val BASE_URL = "http://systechprojects.com/bgmeaweb/api/v1/"
+//const val BASE_URL = "https://www.bgmea.com.bd/api/v1/"
+//const val BASE_URL_FOR_WEB_VIEW = "https://www.bgmea.com.bd/"
+const val BASE_URL_FOR_WEB_VIEW = "http://systechprojects.com/bgmeaweb/"
+
 val interceptor: Interceptor = Interceptor { chain ->
 
     var request: Request = chain.request()
     request = request.newBuilder()
-//            .addHeader("User-Agent", "wad497")
-//            .addHeader("Apikey","fvgOKNF&Y45141fF")
-//            .addHeader("Apiuser","imranrana07@gmail.com")
             .build()
 
     chain.proceed(request)
